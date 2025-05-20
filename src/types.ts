@@ -69,6 +69,23 @@ type Chef = {
     role: string
 };
 
+type Recipe = {
+    id: number,
+    name: string,
+    ingridients: string[],
+    instrucntions: string[],
+    prepTimeMinutes: number,
+    cookTimeMinutes: number,
+    serving: number,
+    difficulty: string,
+    cuisine: string,
+    caloriesPerServing: number,
+    tags: string[],
+    userId: number,
+    image: string,
+    rating: number,
+    reviewCount: number,
+    mealType: string[]
+}
 
-
-export type { Chef };
+export type { Chef, Recipe };
